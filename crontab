@@ -1,2 +1,2 @@
-@reboot root nginx &>/var/log/nginx.cron.log &
-*/15 * * * * root /app/scanner/main.py /app/web/albums /app/web/cache &>/var/log/scanner.cron.log
+@reboot nginx &>/var/log/nginx.cron.log &
+*/15 * * * * /app/scanner/main.py /app/web/albums /app/web/cache &>/var/log/scanner.cron.log
