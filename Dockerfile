@@ -1,7 +1,7 @@
 FROM centos:7
 MAINTAINER Keturah Dola-Borg (keturah@mania.systems)
 
-RUN yum install -y epel-release && yum install -y python python2-pip python-setuptools java-1.8.0-openjdk nginx git make cronie
+RUN yum install -y epel-release && yum install -y python python2-pip python-setuptools java-1.8.0-openjdk nginx git make cronie python-pillow
 
 RUN mkdir /app
 
